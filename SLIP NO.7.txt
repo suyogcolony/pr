@@ -1,0 +1,58 @@
+SLIP NO.7
+Q1.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+#ul-nb {
+list-style: none;
+margin:0;
+padding:0;
+overflow: hidden;
+  background-color: grey;
+}
+
+#ul-nb li {
+float:left;
+padding:15px;
+text-align: center;
+margin-left:10px;
+}
+.active {
+  background-color: white;
+}
+
+</style>
+</head>
+<body>
+
+<ul id="ul-nb">
+  
+<li><a class="active" href="#">Home</a></li>
+<li><a href="#">Java</a></li>
+<li><a href="#">HTML</a></li>
+<li><a href="#">CSS</a></li>
+</ul>
+</body>
+</html>
+
+fds
+a]
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import oneHotEncoder
+data=pd.read_csv("")
+df2=pd.DataFrame(data)
+enc_df=pd.DataFrame(enc.fit_transform(df2[['country']].toarray())
+print(enc.df)
+
+b]
+import pandas as pd
+from sklearn.preprocessing import labelEncoder
+import numpy as np
+data=pd.read_csv("\home")
+df=pd.DataFrame(data)
+labelencoder=LabelEncoder()
+df2['purchased']=labelencoder.fit_transform(df2['purchased'])
+print(df2)

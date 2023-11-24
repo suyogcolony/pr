@@ -1,0 +1,40 @@
+SLIP NO.2
+Q1.
+<HTML>
+<HEAD><TITLE><CENTER>My CITY</CENTER></TITLE></HEAD>
+<body style="background-color:red">
+
+<h1 style="color:blue;">Nashik Maharashtra</h1>
+
+<p style="background:yellow;color:blue;text-decoration:overline;border-style:solid;border-width:5px;">Landmarks</p><br>
+<h2 style="font-family:Berlin Sans FB;font-style:italic;color:yellow;border-style:dashed;border-color:red;">Kalaram Temple</h2><BR>
+<h2 style="font-family:arial;font-style:bold;color:pink;border-style:dotted;border-color:black;">Godavri River</h2><BR>
+<h2 style="font-familyTimes new roman;font-style:italic;border-style:dashed;border-color:red;">Kalaram Temple</h2><BR>
+
+<IMG SRC="Desert.jpg" WIDTH="400" HEIGHT="400" ALT="IMAGE CANNOT BE DISPLAYED">
+</body>
+
+</HTML>
+
+FDS
+a]
+import pandas as pd
+data=pd.read_csv("/home")
+print(data.fillna(data.mean()))
+
+b]
+import numpy as np
+import matplotlib.pyplot as plt
+plt.plot(name,salary)
+plt.show()
+
+c]
+import pandas as pd
+data=pd.read_csv("\home")
+print("first 10 rows are")
+print(data.head(10))
+print("last 10 rows are")
+print(data.tail(10))
+print("random 20 rows are")
+print(data.sample(20))
+

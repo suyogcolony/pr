@@ -1,0 +1,52 @@
+SLIP NO.27
+Q1.
+FIRST CREATE ABC.TXT FILE
+<html>
+<body>
+<form action="file1.php" method="POST">
+Enter 1st file name
+<input type="text" name=txt1><br>
+Enter 2nd file name
+<input type="text" name=txt2><br>
+
+<input type="submit" value="copy">
+</form>
+</body>
+</html>
+<?php
+    $f1=$_POST['txt1'];
+    $f2=$_POST['txt2'];
+
+  $file1=fopen($f1,"r")or exit("cant open file");
+ 
+  $file2=fopen($f2,"w")or exit("cant open file");
+
+while(!feof($file1))
+   {
+    $data=fread($file1,filesize($f1));
+    fwrite($file2,$data);
+    }
+echo "file appended";
+fclose($file1);
+fclose($file2);
+ ?>
+
+fds
+a]
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import oneHotEncoder
+data=pd.read_csv("home")
+df2=pd.DataFrame(data)
+enc_df=pd.DataFrame(enc.fit_transform(df2[['country']].toarray()]
+print(enc_df)
+
+b]
+import pandas as pd
+from sklearn.preprocessing import LabelEncoder
+imprt numpy as np
+data=pd.read_csv("\home")
+df2=pd.DataFrame(data(
+labelencoder=LabelEncoder()
+df2['purchased']=labelencoder.fit_transform(df2['purchased'])
+print(df2)

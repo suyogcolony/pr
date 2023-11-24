@@ -1,0 +1,69 @@
+SLIP NO.28
+Q1.
+<?php
+if(file_exists("stud.dat"))
+{
+  $fp1=fopen("stud.dat","r"); 
+  $buf1=fread($fp1,filesize("stud.dat"));
+  $temprecs=explode("\n",$buf1);
+  $i=0;
+   foreach($temprecs as $t)
+      if(strlen($t)>0)
+          $records[$i++]=explode(" ",$t);
+          echo"<p>********Student Detalis******</p>";
+          echo "<table border=2>";
+          echo"<tr><th>rollno</th><th>Name</th><th>OS</th><th>WT</th><th>DS</th><th>Python</th><th>Java</th><th>CN</th><th>ptage</th></tr>";
+      foreach($records as $rec)
+       {
+           echo "<tr>";
+           $k=1;
+           $tot=0;
+            foreach($rec as $f)
+              {
+                printf("<td>%s</td>",$f);
+                $k++; 
+                 if($k>3)
+                $tot=$tot+$f;
+             }
+            $ptage=$tot/6.0;
+            printf("<th>%.2f</th><br>",$ptage);
+      }
+     echo"</table>";
+     fclose($fp1);
+}//if
+else
+echo "  file not exists";
+?>
+
+
+fds
+a]
+import pandas as pd
+df=pd.DataFrame(columns=['name','age','percentage'])
+df.loc[0]=['kajal',20,99]
+df.loc[9]=['sonali',22,88]
+print(df)
+
+b]
+import pandas as pd
+data=pd.read_csv("home")
+print("shape of data")
+print(data.shape)
+print("datatype of data")
+print(type(data))
+print("description of data")
+print(data.describe())
+
+c]
+import pandas as pd
+data=pd.read_csv("home")
+print("statistical description")
+print(data.describe())
+
+d]
+import pandas as pd
+df=pd.DataFrame(columns=['name','age','percentage']
+df.loc[0]=['mukesh',19,88]
+df.loc[4]=['tejas',54,88]
+df['reamark']=none
+print(df)

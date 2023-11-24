@@ -1,0 +1,60 @@
+Slip13SLIP NO.13
+Q1.
+<html> 
+    
+  <body> 
+  <h3>Chess Board using Nested For Loop</h3>
+   <table width="270px" cellspacing="0px" cellpadding="0px" border="1px">
+   <!-- cell 270px wide (8 columns x 60px) -->
+      <?php
+      for($row=1;$row<=8;$row++)
+        {
+          echo "<tr>";
+          for($col=1;$col<=8;$col++)
+              {
+          $total=$row+$col;
+          if($total%2==0)
+              {
+          echo "<td height=30px width=30px bgcolor=white></td>";
+          }
+              else
+              {
+          echo "<td height=30px width=30px bgcolor=black></td>";
+          }
+          }
+          echo "</tr>";
+    }
+          ?>
+  </table>
+  </body>
+  </html>
+
+fds
+
+a]
+import pandas as pd 
+import matplotlib.pyplot as plt
+import numpy as np
+iris=pd.read_csv("home")
+fig=iris[iris.species=='Iris_setosa']
+plt.scatter(x='petallengthCm',y='petalwidthCm',color='r',label='setosa',marker='h',linewidth=5)
+iris[iris.species=='Iris_versicolor']
+plt.scatter(x='petallengthcm',y='petalwidthcm',color='gold',label='versicolor',marker='*',linewidth=5,fig)
+iris[iris.species=='iris-viginica']
+plt.scatter(x='petallengthcm',y='petalwidthcm',color='navy',label='verginica,marker='8',linewidth=5,fig)
+plt.Xlabel("petal length")
+plt.ylabel("petalwidth")
+plt.title("petal length vs petal width")
+fig=plt.gcf()
+plt.minorticks_on()
+plt.grid(b=True,color='siliver',which='minor',alpha=0.8,|s='_',|w=1)
+plt.show()
+
+b]
+import numpy as np
+a=np.arange(4).reshape((2,2))
+print(a)
+print("maximum value of the above flatened array:")
+print(np.amax(a))
+print("minimum value of the above flattened array")
+print(np.amin(a))

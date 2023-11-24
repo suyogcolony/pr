@@ -1,0 +1,36 @@
+SLIP NO.4
+Q1.
+<html>
+<body>
+<table border=5>
+<caption>List of Books</caption>
+<tr><td rowspan=2>Item No</td><td rowspan=2>Name</td><td colspan=2>Price</td>
+
+<tr><td>rs</td> <td>paise</td></tr> 
+ </tr>
+<tr><td>1</td><td>python</td><td>500</td><td>50</td></tr>
+<tr><td>2</td><td>Java</td><td>345</td><td>00</td></tr>
+</table></body></html>
+
+FDS
+
+a]
+import numpy as np
+import matplotlib.pyplot as plt
+x=np.random.randn(50)
+y=np.random.randn(50)
+plt.plot(x,y)
+plt.scatter(x,y)
+plt.hist(x)
+plt.boxplot(x,vert=True)
+plt.hist(x,facecolor='y',linewidth=2,edgecolor='k',bins=30,alpha=0.6)
+plt.show()
+
+b]
+import pandas as pd 
+data=pd.read_csv("\home")
+print("shape of the data")
+print(data.shape)
+print("data type is")
+print("description of data")
+print(data.describe())

@@ -1,0 +1,63 @@
+SLIP NO.29
+Q1.
+<html>
+<body>
+<form action="event.php" method=POST>
+Enter the name of event<input type=text  name="txt1">
+<input type=submit value=ok>
+</form>
+</body>
+</html>
+
+ <?php
+$conn=pg_connect("host=localhost port=5433  dbname=ty22 user=postgres password=123456");
+if(!$conn)
+{
+
+echo("An error.....in connection");
+}
+else
+{
+echo("connection succesfull");
+echo "<br>";
+      
+$ename1=$_POST['txt1'];
+$s1="update event,committee,ec set status='working' 
+                                    where event.eno=ec.fk_eno and
+                                    committee.cno=ec.fk_cno  and etitle='$ename1'";
+
+   $result = pg_query($conn,$s1);
+        if (!$result)
+        {
+            echo"ERROR.....";
+            
+        }
+        else
+        {
+              echo "record updated";
+        
+        }
+       
+    
+ }
+?>
+
+a]
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import OneHotEncoder
+data=pd.read_csv("home")
+df2=pd.DataFrame(data)
+enc_df=pd.DataFrame(enc.fit_transform(df2['country']]toarray()]
+print(enc_df)
+
+b]
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import LabelEncoder
+data=pd.read_csv("home")
+df2=pd.DataFrame(data)
+labelencoder=labelencoder()
+df2['purchased']=labelencoder.fittransform(df2['purchased'])
+print(df2)
+

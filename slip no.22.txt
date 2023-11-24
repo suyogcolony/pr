@@ -1,0 +1,89 @@
+SLIP NO.22
+Q1.
+<html>
+<body>
+<form name="f1" method="POST" action="arrayc1.php">
+<center>MENU</center>
+1.Insert an element in queue<br>
+2.Delete element from queue<br>
+3.Display the contents of stack<br>
+  Enter your choice : 
+<input type="text" name="t1"><br>
+<input type="submit" value=ok>
+
+</form>
+</body>
+</html>
+<?php
+
+    $ch=$_POST['t1'];
+    $a=array(10,20,1,2,3,4,5,6);
+    switch($ch)
+    {
+        
+            
+            
+        case 1:echo"<br>ORIGINAL QUEUE IS :";
+            foreach($a as $v)
+            {
+                echo"$v\t";
+            }
+            array_unshift($a,'7');
+                echo"<br>After inserting an element queue is :";
+            foreach($a as $v)
+            {
+                echo"$v\t";
+            }
+            break;
+        case 2:echo"<br>ORIGINAL QUEUE IS :";
+            foreach($a as $v)
+            {
+                echo"$v\t";
+            }
+            array_shift($a);
+            echo"<br>Queue after deleting one element : ";
+            foreach($a as $v)
+            {
+                echo"$v\t";
+            }
+            break;
+        case 3:echo"<br>ORIGINAL QUEUE IS :";
+             foreach($a as $v)
+            {
+                echo"$v\t";
+             }
+            break;
+        default :echo"Invalid choice";
+    }
+  
+?>
+
+fds
+a]
+import pandas as pd
+from sklearn import preprocessing
+import numpy as np
+import scipy.stats as s
+from sklearn.preprocessing import.MinMaxScalear
+data=pd.read_csv("/home")
+df2=pd.DataFrame(data)
+print""\n data scaled between 0 to 1")
+data_scaler=preprocessing.MinMaxScaler(feature_range=(0,1))
+data_scaled=data_scaler.fit_transform(df)
+print(" min maxed scaled data")
+print("-----------------------")
+print(data_scaled.round(2))
+
+c]
+import pandas as pd
+from sklearn import preprocessing
+immport numpy as np
+import scipy.stats as s
+from sklearn.preprocessing import MinMaxScaler
+data=pd.read_csv("/home")
+df2=pd.DataFrame(data)
+dn=preprocessing.normalize(df2,norm='11')
+print("\n normalized data")
+print("---------------------------")
+print(dn.round(2))
+

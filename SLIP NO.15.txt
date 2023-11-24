@@ -1,0 +1,87 @@
+SLIP NO.15
+Q1.
+
+<html>
+<body>
+<form action=seta2_1.php method="POST">
+Enter string<input type=text name=txt1><br>
+Enter your choice<br>&nbsp&nbsp
+select first 5 words of string<input type="radio" name="op" value="five"> <br>
+convertcase<input type="radio" name="op" value="convert"><br>
+pad the string<input type="radio" name="op" value="pad"><br>
+Remove leading white spaces<input type="radio" name="op" value="sp"><br>
+reverse th string<input type="radio" name="op" value="rev"><br>
+<input type=submit value="check">
+</form>
+</body>
+</html>
+
+
+<?php
+
+  include("seta2_2.php");
+$x=$_POST['txt1'];
+$y=$_POST['op'];
+
+if($y=="five")
+{
+      echo implode(' ', array_slice(explode(' ', $x), 0, 5));
+   
+}
+
+else
+ if($y=="convert")
+  {
+ 
+    
+  echo "lowercase of string".strtolower($x)."<br>";
+               echo "upper case of string is".strtoupper($x)."<br>";
+
+  }
+else
+ if($y=="pad")
+  {
+ 
+   $p=str_pad($x,15,"*",STR_PAD_BOTH);
+        echo "padded string is".$p."<br>";
+
+  }
+else
+ if($y=="sp")
+  {
+ 
+   echo "after removing white spaces from begining".ltrim($x);
+
+  }
+else
+ if($y=="rev")
+  {
+ 
+  echo "after reverse the string".strrev($x);
+  }
+
+  
+else
+   echo"invalid choice";
+?>
+
+a]
+import numpy as np
+import matplotlib.pyplot as plt
+x=np.random.randn(50)
+y=np.random.randn(50)
+plt.plot(x,y)'
+plt.hist(x)
+plt.boxplot(x,vert=True)
+plt.scatter(x,y,s=110,c='red',marker='*',alpha=0.7)
+plt.hist(x,facecolor='y',linewidth=2,edgecolor='k',bins=30,alpha=0.6)
+plt.show()
+
+b]
+import numpy as np
+import matplotlib pyplot.as plt
+mark=[40,50,70]
+s_name=['os','fds','php']
+plt.pie(mark,labels=s_name)
+plt.show()
+
